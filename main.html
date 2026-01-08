@@ -10,6 +10,10 @@
 </head>
 
 <body>
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fa fa-moon-o"></i>
+    </div>
+
     <header class="header">
         <a href="#" class="logo">Sagar.</a>
         <nav class="navbar">
@@ -42,73 +46,85 @@
     </section>
 
     <section id="about">
-        <div class="profile">
-            <div class="img">
+        <div class="about-section">
+            <h2>About Me</h2>
+            <p>Get to know me better</p>
+        </div>
+        <div class="about-me-info">
+            <div class="my-image">
                 <img src="https://picsum.photos/400/400" style="border-radius: 15px;" alt="">
             </div>
-        </div>
-        <div class="about-container">
-            <h2>About Me</h2>
-            <small class="suggest"> Get to know me better</small>
-            <div class="info">
-                <h3>A Passionate Developer Based In Bhaktapur-Nepal</h3>
-                <p id="p2">I'm a frontend developer with a passion for creating beautiful and functional websites. I
-                    recently completed <br />my web development training and I'm excited to start my journey in the tech
-                    industry.</p>
+            <div class="content-wrapper">
+                <div class="text-container">
 
-                <p id="p3">When I'm not coding, you can find me listining music, reading and gaming etc. I believe in
-                    continuous <br />learning and I'm always exploring new technologies and best practices.</p>
+                    <h3>A Passionate Developer Based In Bhaktapur-Nepal</h3>
 
-                <div class="stats-container">
-                    <div class="stat-item">
+                    <p>I'm a frontend developer with a passion for creating beautiful and functional websites. I
+                        recently completed <br />my web development training and I'm excited to start my journey in the
+                        tech
+                        industry.</p>
+
+                    <p>When I'm not coding, you can find me listining music, reading and gaming etc. I believe in
+                        continuous <br />learning and I'm always exploring new technologies and best practices.</p>
+                </div>
+                <div class="experience-container">
+                    <div class="exp-item">
                         <div class="number">5+</div>
                         <div class="label">Projects Completed</div>
                     </div>
-                    <div class="stat-item">
+                    <div class="exp-item">
                         <div class="number">3+</div>
                         <div class="label">Technologies Mastered</div>
                     </div>
-                    <div class="stat-item">
+                    <div class="exp-item">
                         <div class="number">100%</div>
                         <div class="label">Client Satisfaction</div>
                     </div>
                 </div>
+
                 <div class="download-btn">
-                    <a href="#" class="active"> <i class="fa fa-solid fa-download"></i> Download Resume</a>
+                    <a href="#"> <i class="fa fa-solid fa-download"></i> Download Resume</a>
                 </div>
-                <div id="skills">My Skills
-                    <div class="frontend">&lt/> Frontend
-                        <!-- pbar = progress bar 1 -->
-                        <div class="pbar1">
-                            <label for="pbar1">HTML5</label><br>
-                            <progress id="pbar1" value="90" max="100"></progress>
-                        </div>
+            </div>
 
-                        <div class="pbar1">
-                            <label for="pbar2">CSS</label><br>
-                            <progress id="pbar2" value="85" max="100"></progress>
-                        </div>
+        </div>
+        <div class="skill-container">
 
-                        <div class="pbar1">
-                            <label for="pbar3">JavaScript</label><br>
-                            <progress id="pbar3" value="70" max="100"></progress>
-                        </div>
+            <h2>My skills</h2>
+            <div class="flex">
+
+                <div class="frontend">&lt/> Frontend
+
+                    <div class="pbar1">
+                        <p>HTML5</p><br>
+                        <progress class="pbar" value="90" max="100"></progress>
                     </div>
-                    <div class="other">🛠️ Tools & Others
-                        <div class="pbar2">
-                            <label for="pbar1">Git & GitHub</label><br>
-                            <progress id="pbar1" value="65" max="100"></progress>
-                        </div>
-                        <div class="pbar2">
-                            <label for="pbar1">VS Code</label><br>
-                            <progress id="pbar1" value="80" max="100"></progress>
-                        </div>
-                        <div class="pbar2">
-                            <label for="pbar1">Responsive Design</label><br>
-                            <progress id="pbar1" value="70" max="100"></progress>
-                        </div>
+
+                    <div class="pbar1">
+                        <p>CSS</p><br>
+                        <progress class="pbar" value="85" max="100"></progress>
+                    </div>
+
+                    <div class="pbar1">
+                        <p>JavaScript</p><br>
+                        <progress class="pbar" value="70" max="100"></progress>
                     </div>
                 </div>
+                <div class="other">🛠️ Tools & Others
+                    <div class="pbar2">
+                        <p>Git & GitHub</p><br>
+                        <progress class="pbar" value="65" max="100"></progress>
+                    </div>
+                    <div class="pbar2">
+                        <p>VS Code</p><br>
+                        <progress class="pbar" value="80" max="100"></progress>
+                    </div>
+                    <div class="pbar2">
+                        <p>Responsive Design</p><br>
+                        <progress class="pbar" value="70" max="100"></progress>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -119,14 +135,14 @@
 
         <p>What I've been working on</p>
 
-        <div class="projects-filters">
-            <button class="active" onclick="filterProjects('all')">All</button>
+        <div class="projects-filters" style="">
+            <button class="active" onclick="filterProjects('all')" style="border-radius: 20px; padding: 10px; width: 65px; background-color: #6366f1; color: #ffffff;">All</button>
 
-            <button onclick="filterProjects('html')">HTML</button>
+            <button onclick="filterProjects('html')" style="border-radius: 20px; padding: 10px; width: 75px;">HTML</button>
 
-            <button onclick="filterProjects('css')">CSS</button>
+            <button onclick="filterProjects('css')" style="border-radius: 20px; padding: 10px; width: 65px;">CSS</button>
 
-            <button onclick="filterProjects('js')">JavaScript</button>
+            <button onclick="filterProjects('js')" style="border-radius: 20px; padding: 10px; width: 100px; ">JavaScript</button>
 
         </div>
 
@@ -136,7 +152,7 @@
             <div class="cards-container">
                 <div class="image">
                     <img src="https://picsum.photos/270/200"
-                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;" alt="">
+                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px 10px 0px 0px;" alt="">
                 </div>
                 <h4>Landing Page</h4>
                 <p class="short">A responsive landing page built with HTML and CSS. Features modern design and smooth
@@ -156,7 +172,7 @@
             <div class="cards-container">
                 <div class="image">
                     <img src="https://picsum.photos/270/200"
-                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;" alt="">
+                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px 10px 0px 0px;" alt="">
                 </div>
                 <h4>Todo list</h4>
                 <p class="short">A fully functional todo application with local storage perstience, filtering, and dark
@@ -176,7 +192,7 @@
             <div class="cards-container">
                 <div class="image">
                     <img src="https://picsum.photos/270/200"
-                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;" alt="">
+                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px 10px 0px 0px;" alt="">
                 </div>
                 <h4>CSS Art Gallery</h4>
                 <p class="short">A collection of CSS-only illustrations and animations showcasing advanced CSS
@@ -194,7 +210,7 @@
             <div class="cards-container">
                 <div class="image">
                     <img src="https://picsum.photos/270/200"
-                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;" alt="">
+                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px 10px 0px 0px;" alt="">
                 </div>
                 <h4>Weather App</h4>
                 <p class="short">A weather application that displays current weather and forecasts. Built with
@@ -214,7 +230,7 @@
             <div class="cards-container">
                 <div class="image">
                     <img src="https://picsum.photos/270/200"
-                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;" alt="">
+                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px 10px 0px 0px;" alt="">
                 </div>
                 <h4>Quiz Application</h4>
                 <p class="short">An interactive quiz game with multiple categories, score tracking, and timed qustions.
@@ -236,7 +252,7 @@
             <div class="cards-container">
                 <div class="image">
                     <img src="https://picsum.photos/270/200"
-                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;" alt="">
+                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px 10px 0px 0px;" alt="">
                 </div>
                 <h4>Portfolio Website</h4>
                 <p class="short">A personal portfolio website(this one!) showcasing my projects and skills.</p>
@@ -263,66 +279,121 @@
         <div class="contact">
             <div class="note">
                 <h4>Let's talk about your project</h4>
-                <p>I'm currently available for freelance work and full-time <br>positions. If you have a project that needs
+                <p>I'm currently available for freelance work and full-time <br>positions. If you have a project that
+                    needs
                     coding or you just<br> want to say hi, feel free to reach out!</p>
-                    <div class="contact-card">
+                <div class="contact-card">
 
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fa fa-envelope"></i>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>your.email@example.com</p>
+                        </div>
                     </div>
-                    <div class="contact-text">
-                        <h4>Email</h4>
-                        <p>your.email@example.com</p>
-                    </div>
-                </div>
 
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fa fa-map-marker"></i>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Bhaktapur, Nepal</p>
+                        </div>
                     </div>
-                    <div class="contact-text">
-                        <h4>Location</h4>
-                        <p>Bhaktapur, Nepal</p>
-                    </div>
-                </div>
 
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fa fa-clock-o"></i>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Working Hours</h4>
+                            <p>Mon – Fri: 9AM – 6PM</p>
+                        </div>
                     </div>
-                    <div class="contact-text">
-                        <h4>Working Hours</h4>
-                        <p>Mon – Fri: 9AM – 6PM</p>
+
+                    <div class="contact-socials">
+                        <a href="#"><i class="fa fa-github"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
                     </div>
+
                 </div>
-                
-                <div class="contact-socials">
+            </div>
+
+            <div class="contact-container">
+                <form action="post">
+                    <div>
+                        <label for="username">Your Name</label>
+                        <input type="text" name="username" id="username" placeholder="Enter Your Name">
+                    </div>
+
+                    <div>
+                        <label for="email">Your Email</label>
+                        <input type="text" name="email" id="email" placeholder="Enter Your Email">
+                    </div>
+
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="Project Inquiry">
+                    </div>
+
+                    <div><label for="aboutProject">Your Message</label>
+                        <textarea rows="5" id="aboutProject" placeholder="Tell me about your project..."
+                            required></textarea>
+                    </div>
+                </form>
+
+                <button type="submit">
+                    <i class="fa fa-paper-plane"></i> Send Message
+                </button>
+                <p id="formMessage" style="display:none; margin-top:12px; color:#22c55e; font-size:14px;">
+                    ✅ Your message has been saved successfully!
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h4>Sagar.</h4>
+                <p>Frontend Developer building modern & responsive web experiences.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Follow Me</h4>
+                <div class="footer-socials">
                     <a href="#"><i class="fa fa-github"></i></a>
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>
                 </div>
-                
             </div>
+
         </div>
-        
-        <div class="contact-container">
-            <span>Your Name</span>
-            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-            <span>Your Email</span>
 
-            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-            <span>Subject</span>
-
-            <input type="subject" name="subject" placeholder="Project Inquiry" class="contact-inputs" required>
-            <span>Your Message</span>
-
-            <textarea name="message" placeholder="Tell me about your project.... "class="contact-inputs" required></textarea>
-            
+        <div class="footer-bottom">
+            &copy; 2026 Sagar Shrestha. All rights reserved.
         </div>
-    </div>
-        
-    </section>
+        <p id="love">Made with ❤️ and lots of </p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 
