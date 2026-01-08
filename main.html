@@ -17,10 +17,12 @@
     <header class="header">
         <a href="#" class="logo">Sagar.</a>
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About Me</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <ul>
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contacts">Contact</a>
+            </ul>
         </nav>
 
     </header>
@@ -136,13 +138,17 @@
         <p>What I've been working on</p>
 
         <div class="projects-filters" style="">
-            <button class="active" onclick="filterProjects('all')" style="border-radius: 20px; padding: 10px; width: 65px; background-color: #6366f1; color: #ffffff;">All</button>
+            <button onclick="filterProjects('all')"
+                style="border-radius: 20px; padding: 10px; width: 65px;">All</button>
 
-            <button onclick="filterProjects('html')" style="border-radius: 20px; padding: 10px; width: 75px;">HTML</button>
+            <button onclick="filterProjects('html')"
+                style="border-radius: 20px; padding: 10px; width: 75px;">HTML</button>
 
-            <button onclick="filterProjects('css')" style="border-radius: 20px; padding: 10px; width: 65px;">CSS</button>
+            <button onclick="filterProjects('css')"
+                style="border-radius: 20px; padding: 10px; width: 65px;">CSS</button>
 
-            <button onclick="filterProjects('js')" style="border-radius: 20px; padding: 10px; width: 100px; ">JavaScript</button>
+            <button onclick="filterProjects('js')"
+                style="border-radius: 20px; padding: 10px; width: 100px; ">JavaScript</button>
 
         </div>
 
@@ -201,7 +207,7 @@
                     <span class="tag">CSS</span>
                 </div>
                 <div class="links">
-                    <ahref="#" target="_blank">Live Demo</a>
+                    <a href="#" target="_blank">Live Demo</a>
                         <a href="#" target="_blank">Code</a>
 
                 </div>
@@ -391,7 +397,7 @@
         <div class="footer-bottom">
             &copy; 2026 Sagar Shrestha. All rights reserved.
         </div>
-        <p id="love">Made with ❤️ and lots of </p>
+        <p id="love">Made with ❤️ and lots of coffee</p>
     </footer>
 
     <script src="script.js"></script>
