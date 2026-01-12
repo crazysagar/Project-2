@@ -10,9 +10,6 @@
 </head>
 
 <body>
-    <div class="theme-toggle" id="themeToggle">
-        <i class="fa fa-moon-o"></i>
-    </div>
 
     <header class="header">
         <a href="#" class="logo">Sagar.</a>
@@ -25,6 +22,11 @@
             </ul>
         </nav>
 
+        <div class="toggleBtn">
+     <div class="theme-toggle" id="themeToggle">
+        <i class="fa fa-moon-o"></i>
+    </div>
+   </div>
     </header>
 
     <section id="home">
@@ -350,14 +352,14 @@
                         <textarea rows="5" id="aboutProject" placeholder="Tell me about your project..."
                             required></textarea>
                     </div>
+                    <button type="submit">
+                        <i class="fa fa-paper-plane"></i> Send Message
+                    </button>
+                    <p id="formMessage" style="display:none; margin-top:12px; color:#22c55e; font-size:14px;">
+                        ✅ Your message has been saved successfully!
+                    </p>
                 </form>
 
-                <button type="submit">
-                    <i class="fa fa-paper-plane"></i> Send Message
-                </button>
-                <p id="formMessage" style="display:none; margin-top:12px; color:#22c55e; font-size:14px;">
-                    ✅ Your message has been saved successfully!
-                </p>
 
             </div>
         </div>
